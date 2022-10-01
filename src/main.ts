@@ -1,7 +1,5 @@
 import './style.css'
 
-import { setupPixi } from './pixi'
+import { setupApp } from './app'
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = ``
-
-setupPixi()
+setupApp(document.querySelector('body')!)
